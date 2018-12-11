@@ -6,7 +6,6 @@ install:
   - cd ./functions && npm install && cd ..
 script:
   - cd ./frontend && npm run build && cd ..
-  - cd ./functions && npm run build && cd ..
 deploy:
   skip_cleanup: true
   provider: firebase
