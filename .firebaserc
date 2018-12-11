@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "audio-seva",
-    "development": "audio-seva-team-test"
+    "default": "ci-testing-b989a",
+    "development": "ci-testing-b989a"
   }
 }
