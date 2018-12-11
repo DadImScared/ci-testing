@@ -13,7 +13,7 @@ script:
 #  token:
 #    secure: "QNKg3NY1hK373PlDzmTwaA9U6ZuCJWfFH4Prls1TQaU4rzqUvJVD1zgCYBvxJ0NxRUGwKv7Hy18o8oRP8l6zS2Uszs/+HlE5axSrwUyoiP3lphf9kn31Ui6glO2xp8O00f+v2Im6YBNj91ZtAF3q9PHvCg/sAdALYcg2ghSSbArgNvCya1RE1vGSfkxs0euOZR0n4O9r6AaItfO3Wehy3JrTK8nnXhT529dryYO2brW73lF8IPmehBSQlClSo6uM/4YbLG12OxpMvu/w5K5x96DvHFTVjjRY2EzamWLBhleRB5AH2HtnabqA25UFcLFeDHh0tZ3+99rIX19PlXACDcNRtr8cmLQzbQZm8Al+5/CDzAnGwhyrZGmTkMkqgKmcbHBOwVOpWrtzAZSJElesdBx7fLECUivDQm1bBqPKz/QQzHl0GrIegyQSF5Pbh0qubBm27S2JgrBi+cz30jsSxcdF4sHAdIzSLCgaobRH/J6HYwmnPKSatrxFeFN5fWMRn1lpYgFNcRxKOlX2IUWnjmIj3JT2fTWBTR/dTxhSTKAff2x3NDmyVRU1noKtzu5BudsURF2mNOEDk2uTboO7Qtw/rT7giOFiK4mYs9Xz9G4GQtJyWYe5qrD4/Dm+8+ubc2Y120v9Fh3kCnorqaGuyhwG1ueSsgUgcRyjMgg+FTo="
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+  - firebase deploy --only hosting --token "$FIREBASE_TOKEN" --project "ci-testing-b989a"
 branches:
   only:
     - master
