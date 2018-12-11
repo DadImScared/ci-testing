@@ -3,7 +3,7 @@ node_js:
   - "8.11.3"
 install:
   - cd ./frontend && npm install && cd ..
-  - cd ./functions && npm install && cd ..
+  - cd ./functions && npm install && npm install typescript -g && cd ..
 script:
   - cd ./frontend && npm run build && cd ..
   - cd ./functions && npm run build && cd ..
