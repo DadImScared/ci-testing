@@ -1,4 +1,6 @@
 language: generic
+after_success:
+  - firebase use development
 deploy:
   provider: firebase
   token:
