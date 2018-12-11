@@ -4,6 +4,8 @@ node_js:
 install:
   - cd ./frontend && npm install && cd ..
   - cd ./functions && npm install && cd ..
+before_script:
+  - cd ./functions && npm run build && cd ..
 script:
   - cd ./frontend && npm run build && cd ..
 deploy:
