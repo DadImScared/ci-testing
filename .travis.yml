@@ -2,7 +2,8 @@ language: node_js
 node_js:
   - "8.11.3"
 script:
-  - cd ./frontend
+  - cd ./frontend && npm run build && cd ..
+  - cd ./functions && npm run build && cd ..
 deploy:
   skip_cleanup: true
   provider: firebase
@@ -12,4 +13,4 @@ deploy:
 
 branches:
   only:
-  - master
+    - master
