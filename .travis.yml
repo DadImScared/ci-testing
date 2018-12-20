@@ -6,7 +6,7 @@ branches:
     - master
 stages:
   - name: staging
-    if: branch = master AND type != pull_request
+    if: branch = master
 jobs:
   include:
     - stage: staging
